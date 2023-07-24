@@ -15,9 +15,18 @@ def get_color(color_number=4):
 
 
 def get_allStudentColors():
-    example_color = get_color(1)
+    ramdom_number = random.randint(0,4)
+    example_color = get_color(ramdom_number)
     students_array = []
     #your loop here
+    for i in range(1,11):
+        #print(i)
+        ramdom_number = random.randint(0,3)
+        example_color = get_color(ramdom_number)
+        students_array.append(example_color)
+        #print(ramdom_number)
+        #print(example_color)
+    return students_array
 
 
 print(get_allStudentColors())
